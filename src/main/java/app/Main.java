@@ -22,7 +22,14 @@ public class Main {
                                             .addChangePasswordUseCase()
                                             .build();
 
+        final JFrame application2 = appBuilder
+                                            .addLogoutUseCase()
+                                            .build();
+
         application.pack();
         application.setVisible(true);
+
+        application2.pack();
+        application2.setVisible(true);
     }
 }
